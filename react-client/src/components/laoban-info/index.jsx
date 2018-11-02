@@ -9,9 +9,9 @@ class Laoban extends Component{
         salary:'',
         company:''
     }
-    handleChange=(name,val)=>{
+    setHeader=(header)=>{
         this.setState({
-            [name]:val
+            header
         })
     }
     save=()=>{
@@ -21,7 +21,7 @@ class Laoban extends Component{
         return(
             <div>
                 <NavBar>老板信息完善</NavBar>
-                <HeaderSelector />
+                <HeaderSelector setHeader={this.setHeader}/>
                 <form>
                     <List>
                         <InputItem onChange={(val)=>this.handleChange('post',val)}>招聘职位：</InputItem>

@@ -1,32 +1,29 @@
 import React,{Component} from 'react';
-import {NavBar,Button,List,InputItem,WhiteSpace,WingBlank,Grid} from 'antd-mobile';
-const data = Array.from(new Array(16)).map((_val, i) => ({
-    icon: 'https://gw.alipayobjects.com/zos/rmsportal/nywPmnTAvTmLusPxHPSu.png',
-    text: `image${i}`,
+import {NavBar,Button,InputItem,TextareaItem} from 'antd-mobile';
+import HeaderSelector from "../header-selector/index";
+const data = Array.from(new Array(16)).map((item, index) => ({
+    icon: require(`../header-selector/avatars/头像${index+1}.png`),
+    text: `image${index+1}`,
 }));
 class Dashen extends Component{
+    state={
+        header:'',
+        post:'',
+        info:''
+    }
+    setHeader=header=>{
+        this.setState({
+            header
+        })
+    }
     render(){
         return(
             <div>
                 <NavBar>大神信息完善</NavBar>
-                <WingBlank>
-                    <WhiteSpace/>
-                        <div className="sub-title">请选择头像</div>
-                    <WhiteSpace/>
-                </WingBlank>
-                <Grid data={data} isCarousel onClick={_el => console.log(_el)} />
-                <form>
-                    <List>
-                        <InputItem >求职岗位：</InputItem>
-                        <InputItem >个人介绍：</InputItem>
-                        <WhiteSpace />
-                        <WhiteSpace />
-                        <WhiteSpace />
-                        <WhiteSpace />
-                        <Button type="primary" onClick={this.register}>保存</Button>
-                        <WhiteSpace />
-                    </List>
-                </form>
+                <HeaderSelector setHeader={this.setHeader}/>
+                <InputItem onChange={val => this.handleChange('post', val)}>求职岗位</InputItem>
+                <TextareaItem title="个人介绍" rows={3} onChange={val => this.handleChange('info', val)}/>
+                <Button type="primary">保 存</Button>
             </div>
         )
     }

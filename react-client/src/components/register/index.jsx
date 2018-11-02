@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import Logo from '../logo/index';
 import {List, InputItem,Button,WingBlank, WhiteSpace,Radio,NavBar} from 'antd-mobile';
-import register from '../../containers/register';
 import {Redirect} from 'react-router-dom';
 import PropTypes from 'prop-types';
 const Item = List.Item;
@@ -15,7 +14,6 @@ class Register extends Component {
     static propTypes={
         user:PropTypes.object.isRequired,
         register:PropTypes.func.isRequired,
-
     }
     handleContent=(name,val)=>{
         this.setState({
@@ -35,13 +33,17 @@ class Register extends Component {
     render () {
         const {type}=this.state;
         const {msg,redirectTo}=this.props.user;
+        if(redirectTo) {
+            this.props.history.replace(redirectTo);
+            /*return  <Redirect to={redirectTo}/>*/
+        }
         return (
             <div>
                 <NavBar>硅 谷 直 聘</NavBar>
                 <Logo />
                 <List>
                     <WingBlank>
-                        {msg? <p className="err-msg">msg</p>:''}
+                        {msg? <p className="err-msg">{msg}</p>:''}
                     <WhiteSpace/><InputItem
                     placeholder="请输入用户名" onChange={val=>this.handleContent('username',val)}
                 >用户名</InputItem>

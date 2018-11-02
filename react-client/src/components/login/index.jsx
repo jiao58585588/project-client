@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { List, InputItem,Button,WingBlank, WhiteSpace,NavBar} from 'antd-mobile';
-import {reqLogin} from '../../assets/api/index';
+import {reqLogin} from '../../api/index';
 import Logo from '../logo/index';
 class Login extends Component {
     state={
@@ -17,17 +17,6 @@ class Login extends Component {
         console.log(username,password);
         const data=await reqLogin({username,password});
         console.log(data);
-        const {type}=data.data.data;
-        console.log(type);
-        if(type==='dashen'){
-            console.log(11);
-            this.props.history.replace('/dashen');
-            console.log(12);
-        }else if(type==='laoban'){
-            console.log(13);
-            this.props.history.replace('/laoban');
-            console.log(14);
-        }
     }
     goRegister=()=>{
         this.props.history.replace('/register');
@@ -47,7 +36,6 @@ class Login extends Component {
                             密码
                         </InputItem>
                         <WhiteSpace/>
-
                     </WingBlank>
                 </List>
                 <Button type="primary" onClick={this.login}>登陆</Button>

@@ -28,9 +28,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {HashRouter, Route, Switch} from 'react-router-dom';
 import {Provider} from 'react-redux';
-import './assets/less';
+import './assets/less/index.less';
 import Login from './components/login/index';
-import register from './containers/register';
+import Register from './containers/register';
 import Main from './components/main/index';
 import store from './redux/store';
 ReactDOM.render((
@@ -38,7 +38,7 @@ ReactDOM.render((
             <HashRouter>
                 <Switch>
                     <Route path="/login" component={Login}/>
-                    <Route path="/register" component={register}/>
+                    <Route path="/register" component={Register}/>
                     <Route component={Main}/>
                 </Switch>
             </HashRouter>

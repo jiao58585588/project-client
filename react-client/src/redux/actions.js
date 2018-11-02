@@ -3,9 +3,9 @@
  */
 //action creaters,用来创建action的工厂函数模块
 import {AUTH_SUCCESS,ERR_MSG} from './action-types'
-import {reqRegister} from '../assets/api/index';
+import {reqLogin,reqRegister} from '../api/index';
 export const authSuccess=user=> ({type:AUTH_SUCCESS,data:user});
-export const errMsg=(msg)=>({type:ERR_MSG,data:msg});
+export const errMsg=msg=>({type:ERR_MSG,data:msg});
 //定义异步函数
 export const register=data=>{
     const {username,password,rePassword,type}=data;
