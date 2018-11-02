@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../react-client/src/containers/lanban-info.js"],"names":[],"mappings":";;AAGA;;AACA","file":"lanban-info.js","sourcesContent":["/**\r\n * Created by 10560 on 2018/11/3.\r\n */\r\nimport {connect} from 'react-redux';\r\nimport Laoban from '../components/laoban-info';\r\n\r\n"]}

@@ -1,0 +1,25 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/dist/react-client/src/containers/register.js" />
+        <item url="file://$PROJECT_DIR$/dist/react-client/src/redux/action-types.js" />
+        <item url="file://$PROJECT_DIR$/dist/react-client/src/containers/lanban-info.js" />
+        <item url="file://$PROJECT_DIR$/dist/react-client/src/containers/laoban-info.js" />
+        <item url="file://$PROJECT_DIR$/dist/react-client/src/redux/actions.js" />
+        <item url="file://$PROJECT_DIR$/dist/react-client/src/api/index.js" />
+        <item url="file://$PROJECT_DIR$/dist/react-client/src/redux/store.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/dist/react-client/src/containers/register.js" />
+      <root url="file://$PROJECT_DIR$/dist/react-client/src/redux/action-types.js" />
+      <root url="file://$PROJECT_DIR$/dist/react-client/src/containers/lanban-info.js" />
+      <root url="file://$PROJECT_DIR$/dist/react-client/src/containers/laoban-info.js" />
+      <root url="file://$PROJECT_DIR$/dist/react-client/src/redux/actions.js" />
+      <root url="file://$PROJECT_DIR$/dist/react-client/src/api/index.js" />
+      <root url="file://$PROJECT_DIR$/dist/react-client/src/redux/store.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>
