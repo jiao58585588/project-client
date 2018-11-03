@@ -1,11 +1,13 @@
 import React,{Component} from 'react';
-class Dashen extends Component{
+
+class Laoban extends Component{
+
     render(){
         return(
             <div>
-                大神
+                老板
             </div>
         )
     }
 }
-export default Dashen;
+export default Laoban;
