@@ -31,7 +31,7 @@ import {Provider} from 'react-redux';
 import './assets/less/index.less';
 import Login from './containers/login';
 import Register from './containers/register';
-import Main from './components/main/index';
+import Main from './containers/main';
 import store from './redux/store';
 ReactDOM.render((
         <Provider store={store}>

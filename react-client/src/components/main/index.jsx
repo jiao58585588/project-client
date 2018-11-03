@@ -1,13 +1,21 @@
 import React, {Component} from 'react';
-import {Route, Switch} from 'react-router-dom';
+import {Route, Switch,Redirect} from 'react-router-dom';
 import Laoban from '../laoban';
 import Dashen from '../dashen';
 import LaobanInfo from '../../containers/laoban-info';
 import DashenInfo from '../../containers/dashen-info';
 import Message from '../message';
 import Personal from '../personal';
-import NavFooter from '../nav-footer'
+import NavFooter from '../nav-footer';
+import {NavBar} from 'antd-mobile';
+import cookies from 'js-cookie';
+import PropTypes from 'prop-types';
+import {getRedirectPath} from '../../utils';
 class Main extends Component {
+    static propTypes={
+        user:PropTypes.object.isRequired,
+        getUserInfo:PropTypes.func.isRequired
+    }
     state={
         navList:
             [
@@ -39,9 +47,29 @@ class Main extends Component {
             ]
     }
     render () {
-        const {navList}=this.props;
+        const {navList}=this.state;
+        const pathname=this.props.location.pathname;
+        const currentNav=navList.find((item)=>pathname===item.path);
+        const userId=cookies.get('userId');
+        if(!userId){
+            this.props.history.replace('./login');
+            return;
+        }
+        const {user}=this.props;
+        if(!user._id){
+            this.props.getUserInfo();
+        }
+        if(pathname==='/'){
+          return <Redirect to={getRedirectPath(user.type,user.header)} />
+        }
+        if(user.type==='laoban'){
+            navList[1].hide=true;
+        }else{
+            navList[0].hide=true;
+        }
         return (
             <div>
+              {currentNav? <NavBar>{currentNav.title}</NavBar>:''}
                 <Switch>
                     <Route path="/dashen" component={Dashen}/>
                     <Route path="/laoban" component={Laoban}/>
@@ -50,7 +78,7 @@ class Main extends Component {
                     <Route path="/message" component={Message}/>
                     <Route path="/personal" component={Personal}/>
                 </Switch>
-                <NavFooter navList={navList}/>
+              {currentNav? <NavFooter navList={navList}/>:''}
             </div>
         )
     }

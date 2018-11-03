@@ -2,6 +2,7 @@ import React,{Component} from 'react';
 import {NavBar,Button,InputItem,TextareaItem} from 'antd-mobile';
 import HeaderSelector from "../header-selector/index";
 import PropTypes from 'prop-types';
+import {Redirect} from 'react-router-dom';
 class DashenInfo extends Component{
     static propTypes={
         user:PropTypes.object.isRequired,
@@ -26,9 +27,9 @@ class DashenInfo extends Component{
         this.props.updateUserInfo({...this.state,type:'dashen'})
     }
     render(){
-        const {msg,redirectTo}=this.props.user;
-        if(redirectTo){
-            this.props.history.replace(redirectTo);
+        const {msg,header}=this.props.user;
+        if(header){
+            return <Redirect to='/laoban' />;
         }
         return(
             <div>

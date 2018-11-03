@@ -3,7 +3,7 @@
  */
 //action creaters,用来创建action的工厂函数模块
 import {AUTH_SUCCESS,ERR_MSG,UPDATE_USER,RESET_USER} from './action-types'
-import {reqLogin,reqRegister,reqUpdateUserInfo} from '../api/index';
+import {reqLogin,reqRegister,reqGetUserInfo,reqUpdateUserInfo} from '../api/index';
 export const authSuccess=user=> ({type:AUTH_SUCCESS,data:user});
 export const errMsg=msg=>({type:ERR_MSG,data:msg});
 export const updateUser=user=> ({type:UPDATE_USER,data:user});
@@ -91,5 +91,18 @@ export const updateUserInfo=data=>{
             .catch(rej=>{
                 dispatch(errMsg({msg:'网络出错误了，请刷新重试'}));
             })
+    }
+}
+export const getUserInfo=data=>{
+    return dispatch=>{
+        reqGetUserInfo()
+          .then(res=>{
+              const result=res.data;
+              if(result.code===0){
+                dispatch(updateUser(result.data));
+              }else{
+                  dispatch(resetUser({msg:result.msg}));
+              }
+          })
     }
 }

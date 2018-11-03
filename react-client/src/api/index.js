@@ -12,5 +12,5 @@ export const reqLogin = data => ajax('/login', data, 'POST');
 export const reqRegister = data => ajax('/register', data, 'POST');
 //请求更新用户数据的函数
 export const reqUpdateUserInfo = data => ajax('/update', data, 'POST');
-//请求用户数据的函数
-export const reqGetUserInfo = data => ajax('/user', data);
+//请求用户数据的函数  默认传参为get请求方式
+export const reqGetUserInfo = () => ajax('/user');
