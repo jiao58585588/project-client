@@ -24,12 +24,12 @@ class DashenInfo extends Component{
         })
     }
     saveUserInfo=()=>{
-        this.props.updateUserInfo({...this.state,type:'dashen'})
+        this.props.updateUserInfo({...this.state,type:'dashen'});
     }
     render(){
         const {msg,header}=this.props.user;
         if(header){
-            return <Redirect to='/laoban' />;
+            return <Redirect to='/dashen' />;
         }
         return(
             <div>

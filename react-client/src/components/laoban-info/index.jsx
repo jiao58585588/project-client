@@ -2,6 +2,7 @@ import React,{Component} from 'react';
 import {NavBar,Button,InputItem,TextareaItem} from 'antd-mobile';
 import HeaderSelector from "../header-selector/index";
 import PropTypes from 'prop-types';
+import {Redirect} from 'react-router-dom';
 class LaobanInfo extends Component{
     static propTypes={
         user:PropTypes.object.isRequired,
@@ -28,7 +29,10 @@ class LaobanInfo extends Component{
         this.props.updateUserInfo({...this.state,type:'laoban'})
     }
     render(){
-        const {msg}=this.props.user;
+        const {msg,header}=this.props.user;
+        if(header){
+          return <Redirect to='./laoban' />
+        }
         return(
             <div>
                 <NavBar>老板信息完善</NavBar>

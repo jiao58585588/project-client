@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Route, Switch,Redirect} from 'react-router-dom';
-import Laoban from '../laoban';
-import Dashen from '../dashen';
+import Laoban from '../../containers/laoban';
+import Dashen from '../../containers/dashen';
 import LaobanInfo from '../../containers/laoban-info';
 import DashenInfo from '../../containers/dashen-info';
 import Message from '../message';
