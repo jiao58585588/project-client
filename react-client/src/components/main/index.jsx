@@ -1,9 +1,4 @@
 import React, {Component} from 'react';
-<<<<<<< HEAD
-import {Route, Switch} from 'react-router-dom';
-import Laoban from '../../containers/laoban-info';
-import Dashen from '../dashen';
-=======
 import {Route, Switch,Redirect} from 'react-router-dom';
 import Laoban from '../../containers/laoban';
 import Dashen from '../../containers/dashen';
@@ -17,7 +12,6 @@ import {NavBar} from 'antd-mobile';
 import cookies from 'js-cookie';
 import PropTypes from 'prop-types';
 import {getRedirectPath} from '../../utils';
->>>>>>> 3d1b4d5c72de9021268d01b53a5fb23092fdc0b1
 class Main extends Component {
     static propTypes={
         user:PropTypes.object.isRequired,

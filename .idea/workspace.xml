@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e76e5287-ae65-42b5-ab16-a9bafe17c676" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/react-client/public/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/react-client/src/components/main/index.jsx" afterPath="$PROJECT_DIR$/react-client/src/components/main/index.jsx" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,11 +22,19 @@
       <file leaf-file-name="index.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/react-client/src/components/main/index.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="230">
+              <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/react-client/public/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="506">
+              <caret line="22" column="25" lean-forward="true" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -50,11 +59,11 @@
         <option value="$PROJECT_DIR$/react-client/src/redux/action-types.js" />
         <option value="$PROJECT_DIR$/react-client/src/containers/lanban-info.js" />
         <option value="$PROJECT_DIR$/react-client/src/containers/laoban-info.js" />
-        <option value="$PROJECT_DIR$/react-client/src/components/main/index.jsx" />
         <option value="$PROJECT_DIR$/react-client/src/redux/reducers.js" />
         <option value="$PROJECT_DIR$/react-client/src/components/laoban-info/index.jsx" />
         <option value="$PROJECT_DIR$/react-client/src/redux/actions.js" />
         <option value="$PROJECT_DIR$/react-client/src/api/index.js" />
+        <option value="$PROJECT_DIR$/react-client/src/components/main/index.jsx" />
       </list>
     </option>
   </component>
@@ -70,13 +79,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/react-client/node_modules" />
-  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-156" />
-    <option name="y" value="33" />
-    <option name="width" value="1938" />
+    <option name="x" value="624" />
+    <option name="y" value="41" />
+    <option name="width" value="1201" />
     <option name="height" value="1048" />
   </component>
   <component name="ProjectView">
@@ -96,6 +102,16 @@
     <panes>
       <pane id="ProjectPane">
         <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project-client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project-client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="project-client" />
@@ -176,28 +192,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project-client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project-client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="react-client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -206,7 +200,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../new" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="node.js.path.for.package.jscs" value="project" />
@@ -215,6 +209,11 @@
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
     <property name="JavaScriptPreferStrict" value="false" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\10560\Desktop\project-client\react-client" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -326,20 +325,22 @@
       <workItem from="1541171075775" duration="6490000" />
       <workItem from="1541204737952" duration="187000" />
       <workItem from="1541349035910" duration="104000" />
+      <workItem from="1541436271749" duration="352000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9293000" />
+    <option name="totallyTimeSpent" value="9645000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-156" y="33" width="1938" height="1048" extended-state="0" />
+    <frame x="624" y="41" width="1201" height="1048" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25581396" sideWeight="0.4941957" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16709957" sideWeight="0.4941957" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32945284" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3520958" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3510759" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24925596" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27305388" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19210722" sideWeight="0.5058043" order="0" side_tool="true" content_ui="tabs" />
@@ -382,9 +383,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-202">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#38#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -451,9 +449,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="79" column="25" lean-forward="true" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -475,9 +471,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
           <caret line="15" column="1" lean-forward="false" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -539,13 +533,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/react-client/src/assets/api/ajax.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="37" column="32" lean-forward="false" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/react-client/src/assets/api/ajax.js" />
     <entry file="file://$PROJECT_DIR$/react-client/src/components/register/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -556,13 +544,7 @@
     <entry file="file://$PROJECT_DIR$/react-client/build/static/css/main.653da357.css.map" />
     <entry file="file://$PROJECT_DIR$/react-client/build/static/js/main.27b15dc7.js.map" />
     <entry file="file://$PROJECT_DIR$/react-client/build/index.html" />
-    <entry file="file://$PROJECT_DIR$/react-client/src/assets/api/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="50" lean-forward="false" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/react-client/src/assets/api/index.js" />
     <entry file="file://$PROJECT_DIR$/react-server/app.js" />
     <entry file="file://$PROJECT_DIR$/react-client/src/components/laoban-info/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
@@ -582,16 +564,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="446">
           <caret line="24" column="16" lean-forward="false" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/react-client/src/components/main/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -617,13 +589,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/react-client/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="89" lean-forward="false" selection-start-line="13" selection-start-column="89" selection-end-line="13" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/react-client/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="385">
@@ -646,6 +611,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="169">
           <caret line="60" column="12" lean-forward="false" selection-start-line="60" selection-start-column="12" selection-end-line="60" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-client/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="22" column="25" lean-forward="true" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-client/src/components/main/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
