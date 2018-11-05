@@ -9,7 +9,11 @@ export function getRedirectPath(type,header) {
         path='/laoban';
     }
     if(!header){
+<<<<<<< HEAD
         path+='/Info';
+=======
+        path+='-Info';
+>>>>>>> 3d1b4d5c72de9021268d01b53a5fb23092fdc0b1
     }
     return path;
 }

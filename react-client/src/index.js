@@ -29,9 +29,15 @@ import ReactDOM from 'react-dom';
 import {HashRouter, Route, Switch} from 'react-router-dom';
 import {Provider} from 'react-redux';
 import './assets/less/index.less';
+<<<<<<< HEAD
 import Login from './components/login/index';
 import Register from './containers/register';
 import Main from './components/main/index';
+=======
+import Login from './containers/login';
+import Register from './containers/register';
+import Main from './containers/main';
+>>>>>>> 3d1b4d5c72de9021268d01b53a5fb23092fdc0b1
 import store from './redux/store';
 ReactDOM.render((
         <Provider store={store}>

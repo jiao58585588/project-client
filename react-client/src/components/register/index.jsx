@@ -1,7 +1,10 @@
 import React, {Component} from 'react';
 import Logo from '../logo/index';
 import {List, InputItem,Button,WingBlank, WhiteSpace,Radio,NavBar} from 'antd-mobile';
+<<<<<<< HEAD
 import {Redirect} from 'react-router-dom';
+=======
+>>>>>>> 3d1b4d5c72de9021268d01b53a5fb23092fdc0b1
 import PropTypes from 'prop-types';
 const Item = List.Item;
 class Register extends Component {
