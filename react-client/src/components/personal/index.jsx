@@ -7,14 +7,16 @@ const Brief=Item.Brief;
 const alert=Modal.alert;
 class Personal extends Component{
    static propTypes={
-       user:PropTypes.object.isRequired
+       user:PropTypes.object.isRequired,
+       resetUser:PropTypes.func.isRequired
    }
   logout=()=>{
     alert('退出登录', '你确认退出登录?', [
       { text: '取消', onPress: () => {} },
       { text: '确认', onPress: () => {
         //退出登陆
-        Cookies.remove('userId');
+        Cookies.remove('userid');
+        this.props.resetUser({});
         //跳转到登陆页面
         this.props.history.replace('/login');
       }},
@@ -22,10 +24,11 @@ class Personal extends Component{
   }
     render(){
        const {user}=this.props;
-        return(
+      console.log(user);
+      return(
           <div>
             <Result
-              img={<img src={require(`../header-selector/avatars/${user.header}.png`)} style={{width: 50}} alt="header"/>}
+              /*img={<img src={require(`../../assets/images/${user.header}.png`)} style={{width: 50}} alt="header"/>}*/
               title={user.username}
               message={user.company}
             />

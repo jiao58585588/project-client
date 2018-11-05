@@ -3,7 +3,9 @@
  */
 import Personal from '../components/personal';
 import {connect} from 'react-redux';
+import {resetUser} from '../redux/actions';
 import {getUserInfo} from '../redux/actions';
 export default connect(
-  state=>({user:state.user})
+  state=>({user:state.user}),
+  {resetUser}
 )(Personal)

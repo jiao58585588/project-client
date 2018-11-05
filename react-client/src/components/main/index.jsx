@@ -6,6 +6,7 @@ import LaobanInfo from '../../containers/laoban-info';
 import DashenInfo from '../../containers/dashen-info';
 import Message from '../../containers/message';
 import Personal from '../../containers/personal';
+import Chat from '../../containers/chat';
 import NavFooter from '../nav-footer';
 import {NavBar} from 'antd-mobile';
 import cookies from 'js-cookie';
@@ -50,14 +51,15 @@ class Main extends Component {
         const {navList}=this.state;
         const pathname=this.props.location.pathname;
         const currentNav=navList.find((item)=>pathname===item.path);
-        const userId=cookies.get('userId');
-        if(!userId){
+        const userid=cookies.get('userid');
+        if(!userid){
             this.props.history.replace('./login');
             return;
         }
         const {user}=this.props;
         if(!user._id){
             this.props.getUserInfo();
+          return <div>loading...</div>;
         }
         if(pathname==='/'){
           return <Redirect to={getRedirectPath(user.type,user.header)} />
@@ -77,6 +79,7 @@ class Main extends Component {
                     <Route path="/laoban-info" component={LaobanInfo}/>
                     <Route path="/message" component={Message}/>
                     <Route path="/personal" component={Personal}/>
+                    <Route path="/chat" component={Chat}/>
                 </Switch>
               {currentNav? <NavFooter navList={navList}/>:''}
             </div>
